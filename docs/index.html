@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>算法岗必刷题单</title>
+  <style>
+    :root { color-scheme: light; --bg:#fff; --surface:#fafafa; --border:#e4e4e7; --text:#18181b; --muted:#71717a; --mono:ui-monospace,SFMono-Regular,Menlo,monospace; --sans:ui-sans-serif,system-ui,-apple-system,sans-serif; }
+    @media (prefers-color-scheme: dark) { :root { color-scheme: dark; --bg:#09090b; --surface:#18181b; --border:#27272a; --text:#fafafa; --muted:#a1a1aa; } }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:var(--sans); background:var(--bg); color:var(--text); line-height:1.6; -webkit-font-smoothing:antialiased; }
+    .hero { min-height:42vh; display:flex; align-items:center; justify-content:center; padding:64px 24px 40px; background:linear-gradient(135deg,var(--surface),var(--bg)); }
+    h1 { font-family:var(--mono); font-size:clamp(28px,4.6vw,44px); letter-spacing:-.03em; margin:0; text-align:center; line-height:1.2; }
+    .wrap { max-width:760px; margin:0 auto; padding:0 24px 80px; }
+    p { color:var(--muted); }
+    code { font-family:var(--mono); font-size:.92em; }
+    .how { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin:28px 0 40px; }
+    .how h2, .steps h2 { font-family:var(--mono); font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin:0 0 12px; }
+    ul { list-style:none; padding:0; margin:0; }
+    li { display:flex; gap:10px; padding:8px 0; border-bottom:1px solid var(--border); font-family:var(--mono); font-size:14px; }
+    li span { color:var(--muted); min-width:2.2em; }
+    li.done { color:var(--muted); text-decoration:line-through; }
+    .foot { margin-top:48px; padding-top:20px; border-top:1px solid var(--border); color:var(--muted); font-size:13px; }
+    .foot a { color:var(--text); text-decoration:none; }
+  </style>
+</head>
+<body>
+  <section class="hero"><h1>算法岗必刷题单</h1></section>
+  <div class="wrap">
+    <p>覆盖机器学习、深度学习、Transformer、LLM 优化与解码、强化学习对齐等算法岗高频手撕题。每题附有导学，讲清该题算法原理后再动手写代码。</p>
+    <div class="how">
+      <h2>How to run</h2>
+      <p><code>python scaffold.py</code></p>
+    </div>
+    <div class="steps"><h2>Steps</h2><ul><li class=""><span>1.</span> __init__</li>
+          <li class="done"><span>2.</span> __init__</li>
+          <li class="done"><span>3.</span> my_kmeans</li>
+          <li class="done"><span>4.</span> pca</li>
+          <li class="done"><span>5.</span> K_Nearest_Neighbors</li>
+          <li class="done"><span>6.</span> auc_rank</li>
+          <li class=""><span>7.</span> sigmoid</li>
+          <li class=""><span>8.</span> relu</li>
+          <li class=""><span>9.</span> 交叉熵损失</li>
+          <li class=""><span>10.</span> single_neuron_model</li>
+          <li class=""><span>11.</span> adam_optimizer</li>
+          <li class=""><span>12.</span> AdamW 优化器</li>
+          <li class=""><span>13.</span> residual_block</li>
+          <li class=""><span>14.</span> __init__</li>
+          <li class=""><span>15.</span> example_kernel</li>
+          <li class=""><span>16.</span> __init__</li>
+          <li class=""><span>17.</span> __init__</li>
+          <li class=""><span>18.</span> __init__</li>
+          <li class=""><span>19.</span> kl_divergence</li>
+          <li class="done"><span>20.</span> focal_loss</li>
+          <li class="done"><span>21.</span> triplet_loss</li>
+          <li class="done"><span>22.</span> hinge_loss</li>
+          <li class=""><span>23.</span> InfoNCE Loss</li>
+          <li class="done"><span>24.</span> bpr_loss</li>
+          <li class=""><span>25.</span> lambda_loss</li>
+          <li class=""><span>26.</span> dropout_forward</li>
+          <li class="done"><span>27.</span> __init__</li>
+          <li class=""><span>28.</span> mlp_forward</li>
+          <li class="done"><span>29.</span> masked_attention</li>
+          <li class="done"><span>30.</span> __init__</li>
+          <li class="done"><span>31.</span> sliding_window_self_attention</li>
+          <li class=""><span>32.</span> __init__</li>
+          <li class="done"><span>33.</span> pos_encoding</li>
+          <li class="done"><span>34.</span> ffn_token_kernel</li>
+          <li class="done"><span>35.</span> kv_cache_attention</li>
+          <li class=""><span>36.</span> lora_forward</li>
+          <li class=""><span>37.</span> __init__</li>
+          <li class=""><span>38.</span> online_softmax_attention</li>
+          <li class="done"><span>39.</span> greedy_decode</li>
+          <li class="done"><span>40.</span> beam_search_decode</li>
+          <li class=""><span>41.</span> 温度采样</li>
+          <li class=""><span>42.</span> Top-K 采样</li>
+          <li class="done"><span>43.</span> top_p_sample</li>
+          <li class="done"><span>44.</span> ppo_clip_ratio</li>
+          <li class="done"><span>45.</span> dpo_loss</li>
+          <li class="done"><span>46.</span> compute_efficiency</li>
+          <li class=""><span>47.</span> bpe_merge</li>
+          <li class=""><span>48.</span> paged_attention_blocks</li>
+          <li class="done"><span>49.</span> allreduce_mean</li>
+          <li class="done"><span>50.</span> huber_loss</li>
+          <li class="done"><span>51.</span> precompute_freqs_cis</li>
+          <li class="done"><span>52.</span> __init__</li>
+          <li class="done"><span>53.</span> __init__</li>
+          <li class="done"><span>54.</span> __init__</li>
+          <li class="done"><span>55.</span> __init__</li>
+          <li class="done"><span>56.</span> mla_attention</li>
+          <li class="done"><span>57.</span> __init__</li>
+          <li class="done"><span>58.</span> __init__</li>
+          <li class="done"><span>59.</span> _linear_attn_kv_kernel</li>
+          <li class=""><span>60.</span> __init__</li>
+          <li class="done"><span>61.</span> ring_attention</li>
+          <li class="done"><span>62.</span> token_accuracy</li></ul></div>
+    <p class="foot"><a href="https://codeky.online">codeky.online</a></p>
+  </div>
+</body>
+</html>
